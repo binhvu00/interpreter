@@ -32,8 +32,9 @@ pub fn evaluate(expression: &Expression) -> i32 {
 }
 
 fn main() {
-    let addition = Expression::Add(vec![Expression::Number(2), Expression::Number(2)]);
-    println!("2 + 2 is {}", evaluate(&addition));
+
+    let multiplication = Expression::Multiply(vec![Expression::Number(2), Expression::Number(3)]);
+    println!("2 * 3 is {}", evaluate(&multiplication));
 }
 
 // Arrange
